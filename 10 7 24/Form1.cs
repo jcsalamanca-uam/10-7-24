@@ -6,5 +6,10 @@ namespace _10_7_24
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

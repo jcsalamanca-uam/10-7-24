@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using NLog;
-
 namespace _10_7_24
 {
     internal class Calculadora
@@ -26,11 +24,17 @@ namespace _10_7_24
         {
             try
             {
+                if (num1 == 0 || num2 == 0)
+                {
+                    Console.WriteLine("ERROR: NO SE PUEDE DIVIDIR ENTRE 0");
+                    return 0;
+                }
+                else
+                {
+                    return num1 / num2;
 
-
-                return num1 / num2;
-
-            }
+                }
+                }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
